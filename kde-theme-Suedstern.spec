@@ -105,7 +105,7 @@ A KDE splash screen featuring an inside of a metro car.
 Obrazek startowy KDE oparty na zdjêciu wnêtrza wagonu metra.
 
 %package -n superkaramba-theme-%{_name}
-Summary:	An xmms skin %{_name} theme
+Summary:	An XMMS skin %{_name} theme
 Summary(pl):	Skórka dla XMMS-a z motywu %{_name}
 Group:		Themes
 Requires:	superkaramba
