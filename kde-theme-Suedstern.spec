@@ -9,7 +9,7 @@ Release:	1
 License:	GPL
 Group:		Themes
 Source0:	http://www.barbarakaemper.de/download/bk_berlin_subway-%{version}.tar.bz2
-# Source0-md5:	83c6db9a1b43c3867b98f396a3672d59
+# Source0-md5:	ee6c775ee1e1c28dc28855fc08ef36b0
 URL:		http://kde-look.org/content/show.php?content=8236
 BuildRequires:	autoconf
 BuildRequires:	automake
