@@ -11,12 +11,8 @@ Group:		Themes
 Source0:	http://www.barbarakaemper.de/download/bk_berlin_subway-%{version}.tar.bz2
 # Source0-md5:	ee6c775ee1e1c28dc28855fc08ef36b0
 URL:		http://kde-look.org/content/show.php?content=8236
-BuildRequires:	autoconf
-BuildRequires:	automake
-BuildRequires:	freetype-devel
-BuildRequires:	kdelibs-devel
-BuildRequires:	unsermake
 Requires:	kdelibs
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
