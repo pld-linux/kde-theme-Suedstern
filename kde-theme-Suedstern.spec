@@ -11,7 +11,6 @@ Group:		Themes
 Source0:	http://www.barbarakaemper.de/download/bk_berlin_subway-%{version}.tar.bz2
 # Source0-md5:	ee6c775ee1e1c28dc28855fc08ef36b0
 URL:		http://kde-look.org/content/show.php?content=8236
-Requires:	kdelibs
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -25,19 +24,17 @@ the Suedestern KDE theme, which work in the same place where the metro
 clocks are on the backgrounds and an icewm decoration which has a
 wooden background and simple yet visible buttons.
 
-
 %description -l pl
 Motyw ikon Suedstern sk³ada siê z subtelnych, czerwonawych ikon, które
 tworz± melancholijny nastrój. W tym pakiecie znajdziesz równie¿:
 schemat kolorów tworz±cy melancholijny, lekko br±zowy wygl±d, zdjêcia
-ze stacji metra Berlin-Suedestern (po³udniowy-wschód) opracowane tak,
+ze stacji metra Berlin-Suedestern (po³udniowy wschód) opracowane tak,
 aby tworzy melancholijny klimat, podstawowe d¼wiêki KDE opracowane na
-podstawie odg³osów ze stacji metra Berlin-Suedestern
-(po³udniowy-wschód), obrazek startowy KDE oparty na zdjêciu wnêtrza
-wagonu metra, zegary dla odpowiadnich tapet z tematu Suedestern.
-Dzia³aj± w miejscu, gdzie na tapecie znajduje siê zegar metra oraz
-dekoracjê icewm z t³em stylizowanym na drewno oraz prostymi i
-widocznymi przyciskami.
+podstawie odg³osów ze stacji metra Berlin-Suedestern (po³udniowy
+wschód), obrazek startowy KDE oparty na zdjêciu wnêtrza wagonu metra,
+zegary dla odpowiednich tapet z tematu Suedestern. Dzia³aj± w miejscu,
+gdzie na tapecie znajduje siê zegar metra oraz dekoracjê icewm z t³em
+stylizowanym na drewno oraz prostymi i widocznymi przyciskami.
 
 %package -n kde-icons-%{_name}
 Summary:	KDE icon theme - %{_name}
@@ -77,9 +74,8 @@ Melancholic photos of the Berlin-Suedestern (south-eastern) metro
 station.
 
 %description -n kde-wallpaper-%{_name} -l pl
-Zdjêcia ze stacji metra Berlin-Suedestern (po³udniowy-wschód)
+Zdjêcia ze stacji metra Berlin-Suedestern (po³udniowy wschód)
 opracowane tak, aby tworzy melancholijny klimat.
-
 
 %package -n kde-sounds-%{_name}
 Summary:	KDE sounds - %{_name} theme
@@ -94,8 +90,7 @@ metro station.
 
 %description -n kde-sounds-%{_name} -l pl
 Podstawowe d¼wiêki KDE opracowane na podstawie odg³osów ze stacji
-metra Berlin-Suedestern (po³udniowy-wschód).
-
+metra Berlin-Suedestern (po³udniowy wschód).
 
 %package -n kde-splash-%{_name}
 Summary:	Splash screen %{_name} theme
@@ -109,7 +104,6 @@ A KDE splash screen featuring an inside of a metro car.
 %description -n kde-splash-%{_name} -l pl
 Obrazek startowy KDE oparty na zdjêciu wnêtrza wagonu metra.
 
-
 %package -n superkaramba-theme-%{_name}
 Summary:	An xmms skin %{_name} theme
 Summary(pl):	Skórka dla XMMS-a z motywu %{_name}
@@ -121,7 +115,7 @@ Clocks for related background in the Suedestern KDE theme, which work
 in the same place where the metro clocks are on the backgrounds.
 
 %description -n superkaramba-theme-%{_name} -l pl
-Zegary dla odpowiadnich tapet z tematu Suedestern. Dzia³aj± w miejscu,
+Zegary dla odpowiednich tapet z tematu Suedestern. Dzia³aj± w miejscu,
 gdzie na tapecie znajduje siê zegar metra.
 
 %package -n kde-decoration-icewm-%{_name}
@@ -143,25 +137,21 @@ prostymi i widocznymi przyciskami.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-# create dirs if necessary
 install -d $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/Suedestern
 install -d $RPM_BUILD_ROOT%{_iconsdir}/Suedestern
 install -d $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes
 install -d $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/Suedestern
 install -d $RPM_BUILD_ROOT%{_datadir}/apps/kwin/icewm-themes/Suedestern
 install -d $RPM_BUILD_ROOT%{_datadir}/{wallpapers,sounds}
-install -d $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT
 
 cd theme_content
-mv -f bk_berlin_subway_icons-3.1/* $RPM_BUILD_ROOT%{_iconsdir}/Suedestern/
-mv -f colors/bk_berlin_subway.kcsrc $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes/
-mv -f bk_berlin_subway_splash/* $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/Suedestern/
-mv -f bk_berlin_subway_IceWM/* $RPM_BUILD_ROOT%{_datadir}/apps/kwin/icewm-themes/Suedestern/
-mv -f wallpapers/* $RPM_BUILD_ROOT%{_datadir}/wallpapers/
-mv -f bk_berlin_subway_sounds/* $RPM_BUILD_ROOT%{_datadir}/sounds/
-mv -f bk_berlin_subway_superkaramba/* $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/Suedestern/
-
+mv -f bk_berlin_subway_icons-3.1/* $RPM_BUILD_ROOT%{_iconsdir}/Suedestern
+mv -f colors/bk_berlin_subway.kcsrc $RPM_BUILD_ROOT%{_datadir}/apps/kdisplay/color-schemes
+mv -f bk_berlin_subway_splash/* $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/Suedestern
+mv -f bk_berlin_subway_IceWM/* $RPM_BUILD_ROOT%{_datadir}/apps/kwin/icewm-themes/Suedestern
+mv -f wallpapers/* $RPM_BUILD_ROOT%{_datadir}/wallpapers
+mv -f bk_berlin_subway_sounds/* $RPM_BUILD_ROOT%{_datadir}/sounds
+mv -f bk_berlin_subway_superkaramba/* $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/Suedestern
 
 %clean
 rm -rf $RPM_BUILD_ROOT
