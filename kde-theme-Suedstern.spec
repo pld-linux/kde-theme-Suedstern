@@ -20,10 +20,28 @@ Requires:	kdelibs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-BLAH.
+The Suedstern icon theme consists of mild, red-colorized icons which
+create a melancholic mood. Here you will also find: a colorscheme that
+creates a melancholic, mild brown look, melancholic photos of the
+Berlin-Suedestern (south-eastern) metro station,a KDE splash screen
+featuring an inside of a metro car, clocks for related background in
+the Suedestern KDE theme, which work in the same place where the metro
+clocks are on the backgrounds and an icewm decoration which has a
+wooden background and simple yet visible buttons.
+
 
 %description -l pl
-ZIEW.
+Motyw ikon Suedstern sk³ada siê z subtelnych, czerwonawych ikon, które
+tworz± melancholijny nastrój. W tym pakiecie znajdziesz równie¿:
+schemat kolorów tworz±cy melancholijny, lekko br±zowy wygl±d, zdjêcia
+ze stacji metra Berlin-Suedestern (po³udniowy-wschód) opracowane tak,
+aby tworzy melancholijny klimat, podstawowe d¼wiêki KDE opracowane na
+podstawie odg³osów ze stacji metra Berlin-Suedestern
+(po³udniowy-wschód), obrazek startowy KDE oparty na zdjêciu wnêtrza
+wagonu metra, zegary dla odpowiadnich tapet z tematu Suedestern.
+Dzia³aj± w miejscu, gdzie na tapecie znajduje siê zegar metra oraz
+dekoracjê icewm z t³em stylizowanym na drewno oraz prostymi i
+widocznymi przyciskami.
 
 %package -n kde-icons-%{_name}
 Summary:	KDE icon theme - %{_name}
