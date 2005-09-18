@@ -1,16 +1,24 @@
+# TODO
+# - make install re-entrant
 
-%define         _name	Suedstern
+%define		_name	Suedstern
 
 Summary:	KDE theme - %{_name}
 Summary(pl):	Motyw KDE - %{_name}
 Name:		kde-theme-%{_name}
 Version:	3.2.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		Themes
 Source0:	http://www.barbarakaemper.de/download/bk_berlin_subway-%{version}.tar.bz2
 # Source0-md5:	ee6c775ee1e1c28dc28855fc08ef36b0
 URL:		http://kde-look.org/content/show.php?content=8236
+Requires:	kde-icons-%{_name}
+Requires:	kde-colorscheme-%{_name}
+Requires:	kde-wallpaper-%{_name}
+Requires:	kde-sounds-%{_name}
+Requires:	kde-splash-%{_name}
+Requires:	kde-decoration-icewm-%{_name}
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -66,8 +74,7 @@ Schemat kolorów tworz±cy melancholijny, lekko br±zowy wygl±d.
 Summary:	KDE wallpaper - %{_name}
 Summary(pl):	Tapeta do KDE - %{_name}
 Group:		Themes
-# Contains /usr/share/wallpapers
-Requires:	kdelibs
+Requires:	/usr/share/wallpapers
 
 %description -n kde-wallpaper-%{_name}
 Melancholic photos of the Berlin-Suedestern (south-eastern) metro
@@ -81,8 +88,7 @@ opracowane tak, aby tworzy melancholijny klimat.
 Summary:	KDE sounds - %{_name} theme
 Summary(pl):	D¼wiêki do KDE z motywu %{_name}
 Group:		Themes
-# Contains /usr/share/wallpapers
-Requires:	kdelibs
+Requires:	/usr/share/wallpapers
 
 %description -n kde-sounds-%{_name}
 KDE sounds based on sound from the Berlin-Suedestern (south-eastern)
@@ -155,6 +161,8 @@ mv -f bk_berlin_subway_superkaramba/* $RPM_BUILD_ROOT%{_datadir}/themes/superkar
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%files
 
 %files -n kde-icons-%{_name}
 %defattr(644,root,root,755)
