@@ -4,7 +4,7 @@
 %define		_name	Suedstern
 
 Summary:	KDE theme - %{_name}
-Summary(pl):	Motyw KDE - %{_name}
+Summary(pl.UTF-8):   Motyw KDE - %{_name}
 Name:		kde-theme-%{_name}
 Version:	3.2.2
 Release:	2
@@ -32,21 +32,21 @@ the Suedestern KDE theme, which work in the same place where the metro
 clocks are on the backgrounds and an icewm decoration which has a
 wooden background and simple yet visible buttons.
 
-%description -l pl
-Motyw ikon Suedstern sk³ada siê z subtelnych, czerwonawych ikon, które
-tworz± melancholijny nastrój. W tym pakiecie znajdziesz równie¿:
-schemat kolorów tworz±cy melancholijny, lekko br±zowy wygl±d, zdjêcia
-ze stacji metra Berlin-Suedestern (po³udniowy wschód) opracowane tak,
-aby tworzy melancholijny klimat, podstawowe d¼wiêki KDE opracowane na
-podstawie odg³osów ze stacji metra Berlin-Suedestern (po³udniowy
-wschód), obrazek startowy KDE oparty na zdjêciu wnêtrza wagonu metra,
-zegary dla odpowiednich tapet z tematu Suedestern. Dzia³aj± w miejscu,
-gdzie na tapecie znajduje siê zegar metra oraz dekoracjê icewm z t³em
+%description -l pl.UTF-8
+Motyw ikon Suedstern skÅ‚ada siÄ™ z subtelnych, czerwonawych ikon, ktÃ³re
+tworzÄ… melancholijny nastrÃ³j. W tym pakiecie znajdziesz rÃ³wnieÅ¼:
+schemat kolorÃ³w tworzÄ…cy melancholijny, lekko brÄ…zowy wyglÄ…d, zdjÄ™cia
+ze stacji metra Berlin-Suedestern (poÅ‚udniowy wschÃ³d) opracowane tak,
+aby tworzy melancholijny klimat, podstawowe dÅºwiÄ™ki KDE opracowane na
+podstawie odgÅ‚osÃ³w ze stacji metra Berlin-Suedestern (poÅ‚udniowy
+wschÃ³d), obrazek startowy KDE oparty na zdjÄ™ciu wnÄ™trza wagonu metra,
+zegary dla odpowiednich tapet z tematu Suedestern. DziaÅ‚ajÄ… w miejscu,
+gdzie na tapecie znajduje siÄ™ zegar metra oraz dekoracjÄ™ icewm z tÅ‚em
 stylizowanym na drewno oraz prostymi i widocznymi przyciskami.
 
 %package -n kde-icons-%{_name}
 Summary:	KDE icon theme - %{_name}
-Summary(pl):	Motyw ikon do kde  - %{_name}
+Summary(pl.UTF-8):   Motyw ikon do kde  - %{_name}
 Group:		Themes
 Requires:	kdelibs
 
@@ -54,25 +54,25 @@ Requires:	kdelibs
 The Suedstern icon theme consists of mild, red-colorized icons which
 create a melancholic mood.
 
-%description -n kde-icons-%{_name} -l pl
-Motyw ikon Suedstern sk³ada siê z subtelnych, czerwonawych ikon, które
-tworz± melancholijny nastrój.
+%description -n kde-icons-%{_name} -l pl.UTF-8
+Motyw ikon Suedstern skÅ‚ada siÄ™ z subtelnych, czerwonawych ikon, ktÃ³re
+tworzÄ… melancholijny nastrÃ³j.
 
 %package -n kde-colorscheme-%{_name}
 Summary:	Color scheme for KDE style - %{_name}
-Summary(pl):	Schemat kolorów do stylu KDE - %{_name}
+Summary(pl.UTF-8):   Schemat kolorÃ³w do stylu KDE - %{_name}
 Group:		Themes
 Requires:	kdebase-core
 
 %description -n kde-colorscheme-%{_name}
 A colorscheme that creates a melancholic, mild brown look.
 
-%description -n kde-colorscheme-%{_name} -l pl
-Schemat kolorów tworz±cy melancholijny, lekko br±zowy wygl±d.
+%description -n kde-colorscheme-%{_name} -l pl.UTF-8
+Schemat kolorÃ³w tworzÄ…cy melancholijny, lekko brÄ…zowy wyglÄ…d.
 
 %package -n kde-wallpaper-%{_name}
 Summary:	KDE wallpaper - %{_name}
-Summary(pl):	Tapeta do KDE - %{_name}
+Summary(pl.UTF-8):   Tapeta do KDE - %{_name}
 Group:		Themes
 Requires:	/usr/share/wallpapers
 
@@ -80,13 +80,13 @@ Requires:	/usr/share/wallpapers
 Melancholic photos of the Berlin-Suedestern (south-eastern) metro
 station.
 
-%description -n kde-wallpaper-%{_name} -l pl
-Zdjêcia ze stacji metra Berlin-Suedestern (po³udniowy wschód)
+%description -n kde-wallpaper-%{_name} -l pl.UTF-8
+ZdjÄ™cia ze stacji metra Berlin-Suedestern (poÅ‚udniowy wschÃ³d)
 opracowane tak, aby tworzy melancholijny klimat.
 
 %package -n kde-sounds-%{_name}
 Summary:	KDE sounds - %{_name} theme
-Summary(pl):	D¼wiêki do KDE z motywu %{_name}
+Summary(pl.UTF-8):   DÅºwiÄ™ki do KDE z motywu %{_name}
 Group:		Themes
 Requires:	/usr/share/wallpapers
 
@@ -94,25 +94,25 @@ Requires:	/usr/share/wallpapers
 KDE sounds based on sound from the Berlin-Suedestern (south-eastern)
 metro station.
 
-%description -n kde-sounds-%{_name} -l pl
-Podstawowe d¼wiêki KDE opracowane na podstawie odg³osów ze stacji
-metra Berlin-Suedestern (po³udniowy wschód).
+%description -n kde-sounds-%{_name} -l pl.UTF-8
+Podstawowe dÅºwiÄ™ki KDE opracowane na podstawie odgÅ‚osÃ³w ze stacji
+metra Berlin-Suedestern (poÅ‚udniowy wschÃ³d).
 
 %package -n kde-splash-%{_name}
 Summary:	Splash screen %{_name} theme
-Summary(pl):	Obrazek startowy dla motywu %{_name}
+Summary(pl.UTF-8):   Obrazek startowy dla motywu %{_name}
 Group:		Themes
 Requires:	kdebase-desktop >= 9:3.1.90
 
 %description -n kde-splash-%{_name}
 A KDE splash screen featuring an inside of a metro car.
 
-%description -n kde-splash-%{_name} -l pl
-Obrazek startowy KDE oparty na zdjêciu wnêtrza wagonu metra.
+%description -n kde-splash-%{_name} -l pl.UTF-8
+Obrazek startowy KDE oparty na zdjÄ™ciu wnÄ™trza wagonu metra.
 
 %package -n superkaramba-theme-%{_name}
 Summary:	An XMMS skin %{_name} theme
-Summary(pl):	Skórka dla XMMS-a z motywu %{_name}
+Summary(pl.UTF-8):   SkÃ³rka dla XMMS-a z motywu %{_name}
 Group:		Themes
 Requires:	superkaramba
 
@@ -120,13 +120,13 @@ Requires:	superkaramba
 Clocks for related background in the Suedestern KDE theme, which work
 in the same place where the metro clocks are on the backgrounds.
 
-%description -n superkaramba-theme-%{_name} -l pl
-Zegary dla odpowiednich tapet z tematu Suedestern. Dzia³aj± w miejscu,
-gdzie na tapecie znajduje siê zegar metra.
+%description -n superkaramba-theme-%{_name} -l pl.UTF-8
+Zegary dla odpowiednich tapet z tematu Suedestern. DziaÅ‚ajÄ… w miejscu,
+gdzie na tapecie znajduje siÄ™ zegar metra.
 
 %package -n kde-decoration-icewm-%{_name}
 Summary:	Icewm window decoration for kwin - %{_name}
-Summary(pl):	Dekoracja icewm dla kwin - %{_name}
+Summary(pl.UTF-8):   Dekoracja icewm dla kwin - %{_name}
 Group:		Themes
 Requires:	kde-decoration-icewm
 
@@ -134,8 +134,8 @@ Requires:	kde-decoration-icewm
 This package contains an icewm decoration which has a wooden
 background and simple yet visible buttons.
 
-%description -n kde-decoration-icewm-%{_name} -l pl
-Ten pakiet zawiera dekoracjê icewm z t³em stylizowanym na drewno oraz
+%description -n kde-decoration-icewm-%{_name} -l pl.UTF-8
+Ten pakiet zawiera dekoracjÄ™ icewm z tÅ‚em stylizowanym na drewno oraz
 prostymi i widocznymi przyciskami.
 
 %prep
