@@ -4,7 +4,7 @@
 %define		_name	Suedstern
 
 Summary:	KDE theme - %{_name}
-Summary(pl.UTF-8):   Motyw KDE - %{_name}
+Summary(pl.UTF-8):	Motyw KDE - %{_name}
 Name:		kde-theme-%{_name}
 Version:	3.2.2
 Release:	2
@@ -46,7 +46,7 @@ stylizowanym na drewno oraz prostymi i widocznymi przyciskami.
 
 %package -n kde-icons-%{_name}
 Summary:	KDE icon theme - %{_name}
-Summary(pl.UTF-8):   Motyw ikon do kde  - %{_name}
+Summary(pl.UTF-8):	Motyw ikon do kde  - %{_name}
 Group:		Themes
 Requires:	kdelibs
 
@@ -60,7 +60,7 @@ tworzą melancholijny nastrój.
 
 %package -n kde-colorscheme-%{_name}
 Summary:	Color scheme for KDE style - %{_name}
-Summary(pl.UTF-8):   Schemat kolorów do stylu KDE - %{_name}
+Summary(pl.UTF-8):	Schemat kolorów do stylu KDE - %{_name}
 Group:		Themes
 Requires:	kdebase-core
 
@@ -72,7 +72,7 @@ Schemat kolorów tworzący melancholijny, lekko brązowy wygląd.
 
 %package -n kde-wallpaper-%{_name}
 Summary:	KDE wallpaper - %{_name}
-Summary(pl.UTF-8):   Tapeta do KDE - %{_name}
+Summary(pl.UTF-8):	Tapeta do KDE - %{_name}
 Group:		Themes
 Requires:	/usr/share/wallpapers
 
@@ -86,7 +86,7 @@ opracowane tak, aby tworzy melancholijny klimat.
 
 %package -n kde-sounds-%{_name}
 Summary:	KDE sounds - %{_name} theme
-Summary(pl.UTF-8):   Dźwięki do KDE z motywu %{_name}
+Summary(pl.UTF-8):	Dźwięki do KDE z motywu %{_name}
 Group:		Themes
 Requires:	/usr/share/wallpapers
 
@@ -100,7 +100,7 @@ metra Berlin-Suedestern (południowy wschód).
 
 %package -n kde-splash-%{_name}
 Summary:	Splash screen %{_name} theme
-Summary(pl.UTF-8):   Obrazek startowy dla motywu %{_name}
+Summary(pl.UTF-8):	Obrazek startowy dla motywu %{_name}
 Group:		Themes
 Requires:	kdebase-desktop >= 9:3.1.90
 
@@ -112,7 +112,7 @@ Obrazek startowy KDE oparty na zdjęciu wnętrza wagonu metra.
 
 %package -n superkaramba-theme-%{_name}
 Summary:	An XMMS skin %{_name} theme
-Summary(pl.UTF-8):   Skórka dla XMMS-a z motywu %{_name}
+Summary(pl.UTF-8):	Skórka dla XMMS-a z motywu %{_name}
 Group:		Themes
 Requires:	superkaramba
 
@@ -126,7 +126,7 @@ gdzie na tapecie znajduje się zegar metra.
 
 %package -n kde-decoration-icewm-%{_name}
 Summary:	Icewm window decoration for kwin - %{_name}
-Summary(pl.UTF-8):   Dekoracja icewm dla kwin - %{_name}
+Summary(pl.UTF-8):	Dekoracja icewm dla kwin - %{_name}
 Group:		Themes
 Requires:	kde-decoration-icewm
 
